@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/materialize/materialize.min.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <title>Барбосик</title>
+</head>
+<body class="desktop">
+    <div class="darkness" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="desktop.html" class="brand-logo">Барбосик</a>
+            
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li class="search-li">
+                <form>
+                  <div class="input-field">
+                    <input id="search" type="search" placeholder="Найти животное" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+              </li>
+              <li><a href="#">О нас</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <section class="content-main">
+        <div class="row">
+            <div class="col s2"></div>
+            <div class="col s4 main-content">
+                <div>
+                    <h1>Безопасность. Уважение. Любовь к животным</h1>
+                    <button class="btn">текст</button>
+                </div>
+                
+            </div>
+            <div class="col s4 main-content">
+                <img src="img/main.svg" class="main-img" alt="">
+            </div>
+            <div class="col s2"></div>
+        </div>
+    </section>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/materialize.js"></script>
+<script src="./js/main.js"></script>
+</html>
