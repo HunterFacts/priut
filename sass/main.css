@@ -36,7 +36,37 @@ nav .search-li {
   height: 64px;
 }
 
+div.paw {
+  width: 90px;
+  height: 87px;
+  position: absolute;
+  background-image: url("../img/paw.svg");
+  background-repeat: no-repeat;
+}
+
+div.paw.paw-1 {
+  top: 30vh;
+  left: 45px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+div.paw.paw-2 {
+  top: 11vh;
+  right: 30px;
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
+}
+
+div.paw.paw-3 {
+  top: 75vh;
+  right: 120px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
 .content-main {
+  position: relative;
   padding-top: 64px;
   height: calc(80vh - 64px);
 }
@@ -60,5 +90,30 @@ nav .search-li {
 
 .content-main .main-content .main-img {
   width: 80%;
+}
+
+.content-main .main-content p {
+  font-size: 24px;
+}
+
+.content-main .special-btn {
+  background: none;
+  color: #039be5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #039be5;
+  border-radius: 30px;
+  padding: 15px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.content-main .special-btn:hover {
+  color: white;
+  background-color: #039be5;
+}
+
+footer.page-footer {
+  background-color: #039be5;
 }
 /*# sourceMappingURL=main.css.map */

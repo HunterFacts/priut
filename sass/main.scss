@@ -33,7 +33,31 @@ nav {
         height: 64px;
     }
 }
+div.paw {
+    width: 90px;
+    height: 87px;
+    
+    position: absolute;
+    background-image: url("../img/paw.svg");
+    background-repeat: no-repeat;
+    &.paw-1 {
+        top: 30vh;
+        left: 45px;
+        transform: rotate(35deg);
+    }
+    &.paw-2 {
+        top: 11vh;
+        right: 30px;
+        transform: rotate(340deg);
+    }
+    &.paw-3 {
+        top: 75vh;
+        right: 120px;
+        transform: rotate(15deg);
+    }
+}
 .content-main {
+    position: relative;
     padding-top: 64px;
     .main-content {
         display: flex;
@@ -46,6 +70,26 @@ nav {
         .main-img {
             width: 80%;
         }
+        p {
+            font-size: 24px;
+        }
     }
     height: calc(80vh - 64px);
+    .special-btn {
+        background: none;
+        color: #039be5;
+        box-shadow: none;
+        border: 1px solid #039be5;
+        border-radius: 30px;
+        padding: 15px;
+        height: auto;
+        margin-right: 10px;
+        &:hover {
+            color: white;
+            background-color: #039be5;
+        }
+    }
+}
+footer.page-footer {
+    background-color: #039be5;
 }
