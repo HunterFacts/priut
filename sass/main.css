@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url(i:\Рабочее место\priut\sass\extra\icon.css);
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -18,6 +20,10 @@
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+}
+
+.special-color {
+  color: #039be5;
 }
 
 nav {
@@ -97,13 +103,14 @@ div.paw.paw-3 {
 }
 
 .content-main .special-btn {
+  max-width: 45%;
   background: none;
   color: #039be5;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 1px solid #039be5;
   border-radius: 30px;
-  padding: 15px;
+  padding: 2%;
   height: auto;
   margin-right: 10px;
 }
@@ -111,6 +118,110 @@ div.paw.paw-3 {
 .content-main .special-btn:hover {
   color: white;
   background-color: #039be5;
+}
+
+.content-partners {
+  margin-top: 137px;
+}
+
+.content-partners .partner-h4 {
+  margin-top: 0;
+}
+
+.content-partners .images-partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.content-partners .images-partners img {
+  padding: 10px;
+}
+
+.content-partners .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-numbers {
+  margin-top: 137px;
+}
+
+.content-numbers .big-number {
+  font-size: 36px;
+}
+
+.content-numbers .big-number .numbers {
+  display: inline-block;
+  padding: 7px 13px;
+  background-color: #039be5;
+  color: white;
+  border-radius: 7px;
+}
+
+.content-numbers .big-number-text {
+  font-size: 22px;
+}
+
+.centered-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dogs-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 200px;
+}
+
+.dogs-list nav {
+  position: fixed;
+  z-index: 100;
+}
+
+.dogs-list footer.page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.dogs-list .list-dogs {
+  min-height: calc(100vh - 220px);
+  margin-bottom: 20px;
+}
+
+.dogs-list .list-dogs .left-list-container {
+  position: fixed;
+  border-right: 2px solid #039be5;
+  min-height: calc(100vh - 304px);
+  margin-top: 84px;
+  padding-top: 0px;
+  top: 0;
+}
+
+.dogs-list .list-dogs .left-list-container .sidenav.sidenav-fixed {
+  position: relative;
+  min-height: calc(100vh - 304px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dogs-list .list-dogs .right-container {
+  margin-top: 64px;
 }
 
 footer.page-footer {

@@ -1,0 +1,116 @@
+.gg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.gg-container .gg-icons {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.gg-container .gg-icons:hover {
+  background-color: #016595;
+}
+
+.gg-container .gg-icons:hover .gg-facebook::before {
+  border-left: 4px solid white;
+  border-top: 4px solid white;
+}
+
+.gg-container .gg-icons:hover .gg-facebook::after {
+  background-color: white;
+}
+
+.gg-container .gg-icons:hover .gg-youtube {
+  -webkit-box-shadow: 0 0 0 2px white;
+          box-shadow: 0 0 0 2px white;
+}
+
+.gg-container .gg-icons:hover .gg-youtube::before {
+  border-left: 4px solid white;
+}
+
+.gg-container .gg-icons .gg-facebook {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: block;
+  -webkit-transform: scale(var(--ggs, 1));
+          transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+}
+
+.gg-container .gg-icons .gg-facebook::after,
+.gg-container .gg-icons .gg-facebook::before {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gg-container .gg-icons .gg-facebook::before {
+  width: 8px;
+  height: 20px;
+  border-left: 4px solid #039be5;
+  border-top: 4px solid #039be5;
+  border-top-left-radius: 5px;
+  left: 6px;
+}
+
+.gg-container .gg-icons .gg-facebook::after {
+  width: 10px;
+  height: 4px;
+  background-color: #039be5;
+  top: 7px;
+  left: 4px;
+  -webkit-transform: skew(-5deg);
+          transform: skew(-5deg);
+}
+
+.gg-container .gg-icons .gg-youtube {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: block;
+  -webkit-transform: scale(var(--ggs, 1));
+          transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 10px;
+  -webkit-box-shadow: 0 0 0 2px #039be5;
+          box-shadow: 0 0 0 2px #039be5;
+  border-radius: 15px 15px 15px 15px / 45px 45px 45px 45px;
+}
+
+.gg-container .gg-icons .gg-youtube::before {
+  content: "";
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  border-left: 4px solid #039be5;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+/*# sourceMappingURL=icon.css.map */

@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/materialize/materialize.min.css">
+    <link rel="stylesheet" href="sass/materialize/swiper.min.css">
+    <link rel="stylesheet" href="sass/extra/icon.css">
     <link rel="stylesheet" href="sass/main.css">
+    
     <title>Барбосик</title>
 </head>
 <body class="desktop">
     <div class="darkness" style="background-color: rgba(0, 0, 0, 0.6);"></div>
     <nav>
         <div class="nav-wrapper">
-            <a href="desktop.html" class="brand-logo">Барбосик</a>
+            <a href="../" class="brand-logo">Барбосик</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li class="search-li">
                 <form>
                   <div class="input-field">
-                    <input id="search" type="search" placeholder="Найти животное" required>
+                    <input id="search" type="search" placeholder="Поиск животного" required>
                     <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                     <i class="material-icons">close</i>
                   </div>
                 </form>
               </li>
               <li><a href="#">О нас</a></li>
+              <li><a href="dogs.html">Породы собак</a></li>
+              <li><a href="#">Классификация окраса</a></li>
+              <li><a href="#">На пристройство</a></li>
             </ul>
         </div>
         
@@ -35,8 +41,8 @@
             <div class="col s2"></div>
             <div class="col s4 main-content">
                 <div>
-                    <h1>Безопасность. Уважение. Любовь к животным</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h1>Уникальный поиск животного:</h1>
+                    <p>введите номер микрочипа и наш сервис осуществит поиск по 100+ международным базам данных</p>
                     <button class="btn special-btn">Посмотреть список животных</button>
                     <button class="btn special-btn">Найти животное по QR коду</button>
                 </div>
@@ -57,7 +63,7 @@
             <div class="col s12 m4">
               <div class="icon-block">
                 <h2 class="center light-blue-text"><i class="material-icons">favorite</i></h2>
-                <h5 class="center">Speeds up development</h5>
+                <h5 class="center">Мы<br><br></h5>
     
                 <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
               </div>
@@ -66,7 +72,7 @@
             <div class="col s12 m4">
               <div class="icon-block">
                 <h2 class="center light-blue-text"><i class="material-icons">pets</i></h2>
-                <h5 class="center">User Experience Focused</h5>
+                <h5 class="center">Благополучие животных наша фундаментальная ценность</h5>
     
                 <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
               </div>
@@ -75,7 +81,7 @@
             <div class="col s12 m4">
               <div class="icon-block">
                 <h2 class="center light-blue-text"><i class="material-icons">security</i></h2>
-                <h5 class="center">Easy to work with</h5>
+                <h5 class="center">Станьте членом клуба<br><br></h5>
     
                 <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
               </div>
@@ -86,13 +92,75 @@
         <br><br>
       </div>
     </section>
+    <section class="content-numbers">
+      <div class="container">
+        <div class="row">
+          <div class="col s6 centered-content">
+            <div>
+              <h5 class="center-align big-number">
+                <span class="numbers">1</span>
+                <span class="numbers">6</span>
+                <span class="numbers">1</span>
+                <span class="numbers">9</span>
+                <span class="numbers">7</span>
+                <span class="numbers">1</span>
+              </h5>
+              <p class="center-align big-number-text">Зарегистрированных животных</p>
+            </div>
+            
+          </div>
+          <div class="col s6 centered-content">
+            <p class="big-number-text">Каждый год наша компания помогает вернуть тысячи потерянных жвиотных владельцам по всей России. Люди путешествуют с домашними животными ... Каждый год наша компания помогает вернуть тысячи потерянных жвиотных владельцам по всей России. Люди путешествуют с домашними животными ...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-partners">
+      <div class="container">
+        <div class="row">
+          <div class="col s12"><h4 class="center-align">Кто нам помогает</h4></div>
+          <div class="col s12"><h1 class="special-color center-align partner-h4">Наши партнеры</h1></div>
+          <div class="col s12">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col s12">
+          <div class="col s6">
             <h5 class="white-text">Барбосик</h5>
             <p class="grey-text text-lighten-4">
-
+              Если поиск не удался, с нашей командой можно связаться для проведения углубленных исследований
+            </p>
+          </div>
+          <div class="col s6">
+            <h5 class="white-text">Обратная связь</h5>
+            <div class="gg-container">
+              <div class="gg-icons">
+                <i class="gg-facebook"></i>
+              </div>
+              <div class="gg-icons">
+                <i class="gg-youtube"></i>
+              </div>
+            </div>
+              
+              
             </p>
           </div>
         </div>
@@ -106,5 +174,6 @@
 </body>
 <script src="./js/jquery.js"></script>
 <script src="./js/materialize.js"></script>
+<script src="./js/swiper.min.js"></script>
 <script src="./js/main.js"></script>
 </html>
