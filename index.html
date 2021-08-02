@@ -10,6 +10,18 @@
     
     <title>Барбосик</title>
 </head>
+
+<!-- Dropdown Structure -->
+<ul id="dropdownNav" class="dropdown-content">
+  <li><a href="about.html">О нас</a></li>
+  <li><a href="#">Регистрация</a></li>
+  <li><a href="#">Полезная информация 1</a></li>
+  <li><a href="#">Полезная информация 2</a></li>
+  <li><a href="#">Полезная информация 3</a></li>
+  <li><a href="dogs.html">*Список собачек</a></li>
+  <li><a href="#">*Личный кабинет</a></li>
+</ul>
+
 <body class="desktop">
     <div class="darkness" style="background-color: rgba(0, 0, 0, 0.6);"></div>
     <nav>
@@ -19,40 +31,86 @@
               <li class="search-li">
                 <form>
                   <div class="input-field">
-                    <input id="search" type="search" placeholder="Поиск животного" required>
+                    <input id="search" type="search" placeholder="Введите QR код животного" required>
                     <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                     <i class="material-icons">close</i>
                   </div>
                 </form>
               </li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="dogs.html">Породы собак</a></li>
-              <li><a href="#">Классификация окраса</a></li>
-              <li><a href="#">На пристройство</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Авторизация</a></li>
+              <li><a class="dropdown-trigger dropdown-trigger-dogs" href="#!" data-target="dropdownNav">Навигация<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
         </div>
-        
     </nav>
     <section class="content-main">
         <div class="paw paw-1"></div>
         <div class="paw paw-2"></div>
         <div class="paw paw-3"></div>
-        <div class="row">
-            <div class="col s2"></div>
-            <div class="col s4 main-content">
-                <div>
-                    <h1>Уникальный поиск животного:</h1>
-                    <p>введите номер микрочипа и наш сервис осуществит поиск по 100+ международным базам данных</p>
-                    <button class="btn special-btn">Посмотреть список животных</button>
-                    <button class="btn special-btn">Найти животное по QR коду</button>
+        <!-- Slider main container -->
+        <div class="swiper-container-dogs">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col s2"></div>
+                  <div class="col s4 main-content">
+                      <div>
+                          <h1>Уникальный поиск животного:</h1>
+                          <p>введите номер микрочипа и наш сервис осуществит поиск по 100+ международным базам данных</p>
+                          <button class="btn special-btn">Поиск животного по QR коду</button>
+                      </div>
+                      
+                  </div>
+                  <div class="col s4 main-content">
+                      <img src="img/main.svg" class="main-img" alt="">
+                  </div>
+                  <div class="col s2"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col s2"></div>
+                  <div class="col s4 main-content">
+                      <div>
+                          <h1>Слайд номер 2</h1>
+                          <p>Текст слайда номер 2</p>
+                      </div>
+                      
+                  </div>
+                  <div class="col s4 main-content">
+                      <img src="img/main.svg" class="main-img" alt="">
+                  </div>
+                  <div class="col s2"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col s2"></div>
+                  
+                  <div class="col s4 main-content">
+                      <img src="img/main.svg" class="main-img" alt="">
+                  </div>
+                  <div class="col s4 main-content">
+                    <div>
+                        <h1>Слайд номер 3</h1>
+                        <p>Текст слайда номер 3</p>
+                    </div>
+                    
                 </div>
-                
+                  <div class="col s2"></div>
+              </div>
             </div>
-            <div class="col s4 main-content">
-                <img src="img/main.svg" class="main-img" alt="">
-            </div>
-            <div class="col s2"></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination swiper-pagination-main"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-prev-main"></div>
+          <div class="swiper-button-next swiper-button-next-main"></div>
         </div>
+        
     </section>
     <section class="content-third">
       <div class="container">
@@ -60,6 +118,8 @@
     
           <!--   Icon Section   -->
           <div class="row">
+            <div class="col s12"><h4 class="center-align">Мы</h4></div>
+            <div class="col s6 offset-s3 "><p class="center-align">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers</p></div>
             <div class="col s12 m4">
               <div class="icon-block">
                 <h2 class="center light-blue-text"><i class="material-icons">favorite</i></h2>
@@ -121,7 +181,7 @@
           <div class="col s12"><h4 class="center-align">Кто нам помогает</h4></div>
           <div class="col s12"><h1 class="special-color center-align partner-h4">Наши партнеры</h1></div>
           <div class="col s12">
-            <div class="swiper-container mySwiper">
+            <div class="swiper-container swiper-partner">
               <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
                 <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
@@ -133,8 +193,47 @@
                 <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
                 <div class="swiper-slide"><img src="./img/300x150.png" alt=""></div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-news">
+      <div class="container">
+        <div class="row">
+          <div class="col s12"><h4 class="center-align">Новости</h4></div>
+          <div class="col s12">
+            <div class="swiper-container swiper-news">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure class="card-new">
+                    <div class="image" style="background-image: url('https://klike.net/uploads/posts/2020-06/1591253698_6.jpeg');"></div>
+                    <figcaption>
+                      <div class="date"><span class="day">28</span><span class="month">Янв</span></div>
+                      <h4>The World Ended Yesterday</h4>
+                      <p>
+                        You know what we need, Hobbes? We need an attitude. Yeah, you can't be cool if you don't have an attitude.
+                      </p>
+                    </figcaption>
+                    <a href="#"></a>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="card-new">
+                    <div class="image" style="background-image: url('https://klike.net/uploads/posts/2020-06/1591253680_14.jpg');"></div>
+                    <figcaption>
+                      <div class="date"><span class="day">28</span><span class="month">Сен</span></div>
+                      <h4>The World Ended Yesterday</h4>
+                      <p>
+                        You know what we need, Hobbes? We need an attitude. Yeah, you can't be cool if you don't have an attitude.
+                      </p>
+                    </figcaption>
+                    <a href="#"></a>
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-button-next swiper-button-next-news"></div>
+              <div class="swiper-button-prev swiper-button-prev-news"></div>
             </div>
           </div>
         </div>

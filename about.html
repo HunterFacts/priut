@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/materialize/materialize.min.css">
+    <link rel="stylesheet" href="sass/materialize/swiper.min.css">
+    <link rel="stylesheet" href="sass/extra/icon.css">
+    <link rel="stylesheet" href="sass/main.css">
+    
+    <title>Барбосик</title>
+</head>
+
+<!-- Dropdown Structure -->
+<ul id="dropdownNav" class="dropdown-content">
+  <li><a href="#">О нас</a></li>
+  <li><a href="#">Регистрация</a></li>
+  <li><a href="#">Полезная информация 1</a></li>
+  <li><a href="#">Полезная информация 2</a></li>
+  <li><a href="#">Полезная информация 3</a></li>
+  <li><a href="dogs.html">*Список собачек</a></li>
+  <li><a href="#">*Личный кабинет</a></li>
+</ul>
+
+<body class="desktop">
+    <div class="darkness" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="../" class="brand-logo">Барбосик</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li class="search-li">
+                <form>
+                  <div class="input-field">
+                    <input id="search" type="search" placeholder="Введите QR код животного" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+              </li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Авторизация</a></li>
+              <li><a class="dropdown-trigger dropdown-trigger-dogs" href="#!" data-target="dropdownNav">Навигация<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="content-third content-third-about">
+      <div class="container">
+        <div class="section">
+    
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 main-content">
+              <h4 class="left-h4">Мы</h4>
+              <p class="right-p">спасаем жизнь уличных и бродячих животных новым технологическим методом чипирования. Теперь каждый сможет помочь нам, обнаружив уличное и бродяжное животное, просто просканировав его QR код</p>
+            </div>
+
+            <div class="col s12 image-container">
+              <div class="image-girl-and-dog"></div>
+            </div>
+          </div>
+    
+        </div>
+        <br><br>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s6">
+            <h5 class="white-text">Барбосик</h5>
+            <p class="grey-text text-lighten-4">
+              Если поиск не удался, с нашей командой можно связаться для проведения углубленных исследований
+            </p>
+          </div>
+          <div class="col s6">
+            <h5 class="white-text">Обратная связь</h5>
+            <div class="gg-container">
+              <div class="gg-icons">
+                <i class="gg-facebook"></i>
+              </div>
+              <div class="gg-icons">
+                <i class="gg-youtube"></i>
+              </div>
+            </div>
+              
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2021 Барбосик
+        </div>
+      </div>
+    </footer>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/materialize.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/main.js"></script>
+</html>
